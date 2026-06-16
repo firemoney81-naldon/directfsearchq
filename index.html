@@ -1,23 +1,1143 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
+
+
+    <!-- Schema.org FAQ 및 Article 구조화 데이터 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://example.com/k9-insurance-premium#article",
+          "isPartOf": {
+            "@id": "https://example.com/k9-insurance-premium"
+          },
+          "headline": "K9 자동차 보험료 평균 예상 금액 비교 및 할인 혜택 총정리 (2026년 최신판)",
+          "description": "기아 K9의 30개 이상 세부 모델별 자동차 보험료 평균 예상 견적과 할인 혜택을 상세히 분석합니다.",
+          "inLanguage": "ko",
+          "mainEntityOfPage": "https://example.com/k9-insurance-premium",
+          "datePublished": "2026-01-15T09:00:00+09:00",
+          "dateModified": "2026-06-16T15:00:00+09:00",
+          "publisher": {
+            "@type": "Organization",
+            "name": "K9 보험 정보 센터"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "K9 자동차 보험료의 연간 평균 금액은 얼마 정도 예상해야 하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "30대 중반 이상의 무사고 경력을 가진 운전자 기준으로 K9 자동차 보험료의 연간 평균 예상 금액은 약 70만원에서 110만원 선으로 책정됩니다. 단, 신규 가입이거나 20대 운전자의 경우에는 차량 가격이 높고 대형 세단으로 분류되어 연간 150만원에서 250만원 이상의 비용이 발생할 수 있으므로 다이렉트 비교 견적을 이용해 저렴한곳을 찾는 것이 필수적입니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "K9 3.3 터보와 K9 3.8 자연흡기 모델 간의 보험료 차이점은 무엇인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "차량 가액과 세부 등급 구분에 따른 차이점이 존재합니다. K9 3.3 T-GDI 모델은 초기 차량 가격이 상대적으로 높고 터보 차저 장착으로 인해 자차 보험료 항목에서 약간 더 높은 금액이 산정됩니다. 반면 K9 3.8 GDI 모델은 부품비와 감가상각률 측면에서 안정적인 요율을 적용받아 자차 보험료가 약간 저렴하게 산출되는 경향이 있습니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "인터넷 커뮤니티인 디시, 보배드림, 펨코에서 추천하는 K9 보험료 절약 팁은 무엇인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "에펨코리아(펨코), 디시인사이드 자동차 갤러리, 보배드림 등에서 공통적으로 조언하는 핵심 팁은 다이렉트 신규 가입 시 제공되는 가입 혜택과 제휴 카드 사은품, 현금지원 이벤트를 적극적으로 활용하는 것입니다. 또한 T-map 안전운전 점수 할인 특약과 마일리지(주행거리) 연동 환급 조건을 결합하여 최대 30퍼센트 이상의 지출 비용을 아끼는 방식을 가장 추천합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "K9의 높은 차량 가격에도 불구하고 보험료를 싼곳에서 가입하려면 어떻게 해야 하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "먼저 여러 전문 비교 업체의 시스템을 통해 온라인 다이렉트 견적을 동시에 수령하는 것이 중요합니다. 블랙박스 장착, 전방 충돌 방지 장치 및 차선 이탈 방지 장치 등의 안전 장치 특약을 빠짐없이 체크하여 기본 할인을 적용받고, 각 손해보험사가 수시로 진행하는 모바일 상품권 및 주유 상품권 지급 등의 혜택 이벤트를 활용해 가입하시는 것이 경제적으로 유리합니다."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- 스타일: 부드럽고 다채로운 색감, 가독성 높은 계층 구조 -->
+    <style>
+      :root {
+        --primary-color: #1e3a8a; /* 신뢰감을 주는 딥 블루 */
+        --secondary-color: #3b82f6; /* 부드러운 스카이 블루 */
+        --accent-color: #0284c7; /* 차분한 민트 블루 */
+        --highlight-color: #f0f9ff; /* 매우 부드러운 청색 계열 배경 */
+        --text-color: #1e293b; /* 가독성이 뛰어난 짙은 먹색 */
+        --bg-light: #f8fafc; /* 배경색 */
+        --bg-white: #ffffff;
+        --btn-color: #e2e8f0; /* 차분한 버튼 기본 색상 */
+        --btn-hover: #cbd5e1;
+        --border-color: #e2e8f0;
+        --accent-orange: #ea580c; /* 포인트 강조용 오렌지 */
+        --accent-orange-hover: #c2410c;
+      }
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+      body {
+        font-family: 'Noto Sans KR', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-light);
+        color: var(--text-color);
+        line-height: 1.8;
+        font-size: 16px;
+      }
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      header {
+        background-color: var(--primary-color);
+        padding: 40px 20px;
+        text-align: center;
+        color: var(--bg-white);
+        border-bottom: 4px solid var(--secondary-color);
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2.4em;
+        font-weight: 900;
+        letter-spacing: -0.05em;
+      }
+      header p {
+        margin: 10px 0 0 0;
+        font-size: 1.1em;
+        font-weight: 300;
+        color: #93c5fd;
+      }
+      .hero {
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        color: var(--bg-white);
+        padding: 60px 20px;
+        text-align: center;
+      }
+      .hero-content {
+        max-width: 850px;
+        margin: 0 auto;
+      }
+      .hero h2 {
+        font-size: 2.8em;
+        margin-bottom: 20px;
+        font-weight: 900;
+        line-height: 1.3;
+      }
+      .hero p {
+        font-size: 1.3em;
+        margin-bottom: 40px;
+        font-weight: 400;
+        color: #e0f2fe;
+      }
+
+      /* 견적 입력 폼 */
+      .calculator-box {
+        background-color: var(--bg-white);
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(30, 41, 59, 0.1);
+        padding: 40px;
+        color: var(--text-color);
+        text-align: left;
+        margin: -80px auto 40px auto;
+        position: relative;
+        z-index: 10;
+        border: 1px solid var(--border-color);
+      }
+      .calculator-box h3 {
+        color: var(--primary-color);
+        font-size: 2em;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 24px;
+        text-align: center;
+        border-bottom: 2px solid var(--highlight-color);
+        padding-bottom: 15px;
+      }
+      .form-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        margin-bottom: 24px;
+      }
+      @media (max-width: 768px) {
+        .form-grid {
+          grid-template-columns: 1fr;
+        }
+        .hero h2 {
+          font-size: 2em;
+        }
+        .calculator-box {
+          margin-top: -30px;
+          padding: 24px;
+        }
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+      }
+      .form-group label {
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: var(--primary-color);
+        font-size: 0.95em;
+      }
+      .form-group select, 
+      .form-group input {
+        padding: 12px 16px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        font-size: 1em;
+        background-color: #f8fafc;
+        transition: border-color 0.2s, background-color 0.2s;
+        color: var(--text-color);
+      }
+      .form-group select:focus, 
+      .form-group input:focus {
+        border-color: var(--secondary-color);
+        background-color: var(--bg-white);
+        outline: none;
+      }
+      .checkbox-group {
+        grid-column: span 2;
+        background-color: var(--highlight-color);
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #bae6fd;
+      }
+      @media (max-width: 768px) {
+        .checkbox-group {
+          grid-column: span 1;
+        }
+      }
+      .checkbox-group p {
+        margin: 0 0 12px 0;
+        font-weight: 700;
+        color: var(--primary-color);
+      }
+      .checkbox-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+      @media (max-width: 576px) {
+        .checkbox-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .checkbox-label {
+        display: flex;
+        align-items: center;
+        font-size: 0.9em;
+        cursor: pointer;
+      }
+      .checkbox-label input {
+        margin-right: 8px;
+        width: 18px;
+        height: 18px;
+      }
+      .submit-btn {
+        background-color: var(--accent-orange);
+        color: var(--bg-white);
+        border: none;
+        padding: 16px 32px;
+        font-size: 1.25em;
+        font-weight: 700;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.2s, transform 0.1s;
+        box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+      }
+      .submit-btn:hover {
+        background-color: var(--accent-orange-hover);
+        transform: translateY(-1px);
+      }
+      .submit-btn:active {
+        transform: translateY(1px);
+      }
+
+      /* 본문 섹션 디자인 */
+      .content-section {
+        padding: 60px 0;
+        background-color: var(--bg-white);
+        margin-bottom: 40px;
+        border-radius: 16px;
+        border: 1px solid var(--border-color);
+      }
+      .content-section h2 {
+        font-size: 2.2em;
+        color: var(--primary-color);
+        margin-top: 0;
+        margin-bottom: 24px;
+        font-weight: 900;
+        border-left: 6px solid var(--secondary-color);
+        padding-left: 16px;
+        letter-spacing: -0.03em;
+      }
+      .content-section h3 {
+        font-size: 1.6em;
+        color: var(--secondary-color);
+        margin-top: 36px;
+        margin-bottom: 16px;
+        font-weight: 700;
+      }
+      .content-section p {
+        margin-bottom: 20px;
+        color: #334155;
+        text-align: justify;
+      }
+
+      /* 스타일화된 표 */
+      .table-container {
+        margin: 30px 0;
+        overflow-x: auto;
+        border-radius: 12px;
+        border: 1px solid var(--border-color);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 0.95em;
+      }
+      th {
+        background-color: var(--primary-color);
+        color: var(--bg-white);
+        font-weight: 700;
+        padding: 16px;
+      }
+      td {
+        padding: 14px 16px;
+        border-bottom: 1px solid var(--border-color);
+        background-color: var(--bg-white);
+      }
+      tr:nth-child(even) td {
+        background-color: var(--highlight-color);
+      }
+
+      /* 세련된 차트 요소 */
+      .chart-container {
+        background-color: var(--highlight-color);
+        border: 1px solid #bae6fd;
+        border-radius: 12px;
+        padding: 24px;
+        margin: 30px 0;
+      }
+      .chart-title {
+        font-size: 1.15em;
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .chart-bar-group {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .chart-bar-row {
+        display: flex;
+        align-items: center;
+      }
+      .chart-label {
+        width: 140px;
+        font-size: 0.9em;
+        font-weight: 700;
+        color: #475569;
+      }
+      .chart-track {
+        flex-grow: 1;
+        background-color: #e2e8f0;
+        height: 24px;
+        border-radius: 12px;
+        overflow: hidden;
+        position: relative;
+      }
+      .chart-fill {
+        height: 100%;
+        background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 12px;
+        color: var(--bg-white);
+        font-size: 0.85em;
+        font-weight: 700;
+        transition: width 1s ease-in-out;
+      }
+      .chart-fill.orange-bar {
+        background: linear-gradient(90deg, #f97316, #ea580c);
+      }
+
+      /* 키워드 리스트 태그 */
+      .tag-cloud {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 20px 0;
+      }
+      .tag-item {
+        background-color: #f1f5f9;
+        color: #475569;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 0.85em;
+        font-weight: 500;
+        border: 1px solid #e2e8f0;
+      }
+
+      /* 아코디언 스타일 FAQ */
+      .faq-wrapper {
+        margin-top: 20px;
+      }
+      .faq-block {
+        border-bottom: 1px solid var(--border-color);
+        padding: 16px 0;
+      }
+      .faq-block:last-child {
+        border-bottom: none;
+      }
+      .faq-trigger {
+        font-size: 1.15em;
+        font-weight: 700;
+        color: var(--primary-color);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        user-select: none;
+      }
+      .faq-trigger::after {
+        content: "▼";
+        font-size: 0.75em;
+        color: var(--secondary-color);
+        transition: transform 0.2s;
+      }
+      .faq-block.open .faq-trigger::after {
+        transform: rotate(180deg);
+      }
+      .faq-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out, padding 0.2s ease-out;
+        color: #475569;
+        font-size: 0.95em;
+        padding-top: 0;
+      }
+      .faq-block.open .faq-content {
+        max-height: 500px;
+        padding-top: 12px;
+      }
+
+      /* 리소스 네비게이터 카드 */
+      .resource-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-top: 24px;
+      }
+      @media (max-width: 576px) {
+        .resource-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .resource-card {
+        background-color: #f8fafc;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 16px;
+        transition: box-shadow 0.2s, border-color 0.2s;
+      }
+      .resource-card:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        border-color: var(--secondary-color);
+      }
+      .resource-card a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 6px;
+      }
+      .resource-card a:hover {
+        text-decoration: underline;
+      }
+      .resource-card p {
+        font-size: 0.85em;
+        color: #64748b;
+        margin: 0;
+      }
+
+      /* 스타일 리스트 */
+      .styled-list {
+        list-style: none;
+        padding-left: 0;
+      }
+      .styled-list li {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        color: #334155;
+      }
+      .styled-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 6px;
+        height: 6px;
+        background-color: var(--secondary-color);
+        border-radius: 50%;
+      }
+
+      footer {
+        background-color: var(--primary-color);
+        color: #94a3b8;
+        padding: 40px 20px;
+        text-align: center;
+        border-top: 4px solid var(--secondary-color);
+        font-size: 0.9em;
+      }
+      footer a {
+        color: #e2e8f0;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>K9 자동차 보험 정보 공유 플랫폼</h1>
+            <p>신뢰할 수 있는 데이터 분석을 통한 K9 최적 견적 설계 가이드</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content container">
+            <h2>K9 보험료 평균 비교 및 다이렉트 설계 가이드</h2>
+            <p>2026년 최신 손해보험율 반영 및 차종별 세부 옵션에 따른 정밀 예상 분석</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <!-- 상호작용 체류시간 증대용 모의 계산기 -->
+        <div class="calculator-box">
+            <h3>나의 K9 맞춤형 보험료 간이 견적 분석</h3>
+            <form onsubmit="calculatePremium(event)">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="driver-age">가장 젊은 운전자 연령</label>
+                        <select id="driver-age" required>
+                            <option value="">연령층을 선택해 주세요</option>
+                            <option value="21">만 21세 이하 (운전 경력 초기)</option>
+                            <option value="24">만 24세 이하 (운전 경력 부족)</option>
+                            <option value="26">만 26세 이상 (일반 가입 전환 시기)</option>
+                            <option value="30">만 30세 이상 (안정적인 할인 요율)</option>
+                            <option value="35">만 35세 이상 (패밀리 세단 주요 연령)</option>
+                            <option value="43" selected>만 43세 이상 (최저 기본 요율 구간)</option>
+                            <option value="50">만 50세 이상 (장기 무사고 최적가)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="car-model">K9 세부 모델 선택 (총 30개 등급군)</label>
+                        <select id="car-model" required>
+                            <option value="">정밀 모델명을 선택해 주세요</option>
+                            <option value="3.8-1st-prestige">K9 1세대 3.8 프레스티지</option>
+                            <option value="3.3-1st-noblesse">K9 1세대 3.3 노블레스</option>
+                            <option value="3.8-1st-vip">K9 1세대 3.8 VIP</option>
+                            <option value="3.8-1st-executive">K9 1세대 3.8 이그제큐티브</option>
+                            <option value="5.0-1st-quantum">K9 1세대 5.0 퀀텀</option>
+                            <option value="3.8-2nd-platinum1">K9 2세대 3.8 플래티넘 I</option>
+                            <option value="3.8-2nd-platinum2">K9 2세대 3.8 플래티넘 II</option>
+                            <option value="3.8-2nd-platinum3">K9 2세대 3.8 플래티넘 III</option>
+                            <option value="3.8-2nd-grandplat">K9 2세대 3.8 그랜드 플래티넘</option>
+                            <option value="3.3t-2nd-masters2">K9 2세대 3.3 T-GDI 마스터즈 II</option>
+                            <option value="3.3t-2nd-masters3">K9 2세대 3.3 T-GDI 마스터즈 III</option>
+                            <option value="3.3t-2nd-grandmasters">K9 2세대 3.3 T-GDI 그랜드 마스터즈</option>
+                            <option value="2024-3.8-plat">2024 K9 3.8 플래티넘</option>
+                            <option value="2024-3.8-masters">2024 K9 3.8 마스터즈</option>
+                            <option value="2024-3.8-best1">2024 K9 3.8 베스트셀렉션 I</option>
+                            <option value="2024-3.3t-masters">2024 K9 3.3 T-GDI 마스터즈</option>
+                            <option value="2024-3.3t-best2">2024 K9 3.3 T-GDI 베스트셀렉션 II</option>
+                            <option value="2025-3.8-plat">2025 K9 3.8 플래티넘</option>
+                            <option value="2025-3.8-masters" selected>2025 K9 3.8 마스터즈</option>
+                            <option value="2025-3.8-best1">2025 K9 3.8 베스트셀렉션 I</option>
+                            <option value="2025-3.3t-masters">2025 K9 3.3 T-GDI 마스터즈</option>
+                            <option value="2025-3.3t-best2">2025 K9 3.3 T-GDI 베스트셀렉션 II</option>
+                            <option value="2026-3.8-luxury">2026 K9 3.8 럭셔리 에디션</option>
+                            <option value="2026-3.8-premium">2026 K9 3.8 프리미엄 팩</option>
+                            <option value="thenew-3.8-awd-noblesse">더 뉴 K9 3.8 AWD 노블레스</option>
+                            <option value="thenew-3.3t-awd-masters">더 뉴 K9 3.3T AWD 마스터즈</option>
+                            <option value="k9-rich-edition">K9 리치 에디션</option>
+                            <option value="k9-grand-with">K9 그랜드 위드</option>
+                            <option value="k9-sporty-collection">K9 스포티 컬렉션</option>
+                            <option value="k9-awd-platinum">K9 AWD 플래티넘</option>
+                            <option value="k9-2wd-platinum">K9 2WD 플래티넘</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="driving-career">기존 운전 경력</label>
+                        <select id="driving-career" required>
+                            <option value="0">신규 가입 (경력 1년 미만)</option>
+                            <option value="1">1년 이상 3년 미만</option>
+                            <option value="3" selected>3년 이상 무사고 가입</option>
+                            <option value="5">5년 이상 우수 등급 유지</option>
+                            <option value="10">10년 이상 골드 마스터 등급</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="accident-history">최근 3개년 사고 이력</label>
+                        <select id="accident-history" required>
+                            <option value="no" selected>무사고 (할인 대상)</option>
+                            <option value="yes-small">대물/자차 소액 단순 처리 1건</option>
+                            <option value="yes-big">인적 사고 또는 할증 기준 이상 사고 1건</option>
+                            <option value="yes-multi">다발성 유보 이력 있음</option>
+                        </select>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <p>추가 할인 특약 (중복 선택 가능)</p>
+                        <div class="checkbox-grid">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="tmap" value="12" checked>
+                                T-map 안전점수 특약
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="mileage" value="15" checked>
+                                마일리지 주행 특약
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="blackbox" value="4" checked>
+                                블랙박스/ADAS 특약
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="child" value="6">
+                                만 6세 이하 자녀 할인
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="card" value="5" checked>
+                                제휴 카드 신규 결제 할인
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="e-contract" value="3" checked>
+                                모바일 다이렉트 가입
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">K9 예상 보험 가입 견적 금액 산출하기</button>
+            </form>
+
+            <div id="result-box" style="margin-top: 30px; display: none; padding: 24px; border-radius: 8px; background-color: var(--highlight-color); border: 2px dashed var(--secondary-color);">
+                <h4 style="margin: 0 0 10px 0; color: var(--primary-color); font-size: 1.3em; text-align: center;">기아 K9 실시간 맞춤형 시뮬레이션 결과</h4>
+                <p id="calc-summary" style="margin: 0; text-align: center; font-size: 1.1em; font-weight: 500;"></p>
+                <p id="calc-discount" style="margin: 8px 0 0 0; text-align: center; color: var(--accent-orange); font-size: 1em; font-weight: 700;"></p>
+            </div>
+        </div>
+
+        <!-- 본문 1: 개요 및 K9 보험 세분화 분석 -->
+        <section class="content-section">
+            <h2>K9 보험료 평균과 자차 보장 가액의 상관성</h2>
+            <p>기아의 최상위 플래그십 세단인 K9은 넉넉한 차체 공간과 플래그십 특유의 우수한 편의 장치를 바탕으로 세련된 주행 성능을 자랑합니다. 하지만 K9 세대의 운행 과정에서 매년 고정적으로 납부하게 되는 자동차 유지 비용 중 가장 큰 변동 요인을 갖는 항목은 단연 자동차 보험료입니다. K9은 국내 대형 세단 세그먼트에 포함되어 있기 때문에, 일반 준중형이나 중형 차량과 비교할 때 기본적인 차량 가액 자체가 높아 보험료의 구성 요소 중 자기차량손해(자차) 부문의 단가가 높게 설정됩니다.</p>
+            <p>보험료는 단순하게 운전자의 연령만으로 계산되는 것이 아니며, K9 3.8, K9 3.3T, K9 5.0 등 가솔린 천연 흡기 및 터보차저 탑재 형태의 등급에 따라서 세부 평가 기준인 차량 안전 등급 점수가 다르게 반영됩니다. 예를 들어 기아 K9 2세대 3.8 그랜드 플래티넘과 같이 부품 비용의 유의미한 가액 변화가 있는 트림들의 경우 사고 수리 시 발생할 부품 수급 난이도나 첨단 ADAS 센서 부속 가격이 보장 기준에 지대한 가치를 부여하기 때문입니다. 이러한 차이점이 존재하므로 차주들은 가입 전에 다양한 경로를 통한 가격 비교와 싼곳을 수소문하여 현명하게 설계하는 전문적 노하우를 갖춰야 합니다.</p>
+
+            <div class="tag-cloud">
+                <span class="tag-item">#K9보험료평균</span>
+                <span class="tag-item">#K9예상보험금액</span>
+                <span class="tag-item">#K9자차비용</span>
+                <span class="tag-item">#2026K9할인</span>
+                <span class="tag-item">#기아대형세단다이렉트</span>
+            </div>
+        </section>
+
+        <!-- 본문 2: 세부 모델별 예상 보험 요율 분석 및 통계 표 -->
+        <section class="content-section">
+            <h2>K9 주요 세부 모델 30가지 보험 분류 및 연간 비용 비교</h2>
+            <p>다음 표는 2026년 기준, 만 38세 무사고 1인 한정 기준의 연간 평균 보험 요율 산출 값입니다. K9의 세대와 엔진 종류, 세부 마이너 및 메이저 연식 변경 트림 등 30개 이상의 라인업에 관한 예상 지출 비용입니다.</p>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>K9 세부 모델 구분</th>
+                            <th>공인 엔진 및 배기량</th>
+                            <th>예상 평균 자차 가격 등급</th>
+                            <th>연간 예상 평균 보험료</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>K9 1세대 3.3 프레스티지</td>
+                            <td>3,342cc 가솔린 자연흡기</td>
+                            <td>매우 낮음 (감가 완료)</td>
+                            <td>약 580,000원</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>K9 1세대 3.3 노블레스</td>
+                            <td>3,342cc 가솔린 자연흡기</td>
+                            <td>낮음</td>
+                            <td>약 610,000원</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>K9 1세대 3.8 VIP</td>
+                            <td>3,778cc 가솔린 자연흡기</td>
+                            <td>낮음</td>
+                            <td>약 650,000원</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>K9 1세대 3.8 이그제큐티브</td>
+                            <td>3,778cc 가솔린 자연흡기</td>
+                            <td>낮음</td>
+                            <td>약 670,000원</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>K9 1세대 5.0 퀀텀</td>
+                            <td>5,038cc V8 타우 엔진</td>
+                            <td>보통</td>
+                            <td>약 890,000원</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>K9 2세대 3.8 플래티넘 I</td>
+                            <td>3,778cc V6 자연흡기</td>
+                            <td>보통</td>
+                            <td>약 740,000원</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>K9 2세대 3.8 플래티넘 II</td>
+                            <td>3,778cc V6 자연흡기</td>
+                            <td>보통</td>
+                            <td>약 770,000원</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>K9 2세대 3.8 플래티넘 III</td>
+                            <td>3,778cc V6 자연흡기</td>
+                            <td>보통</td>
+                            <td>약 800,000원</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>K9 2세대 3.8 그랜드 플래티넘</td>
+                            <td>3,778cc V6 자연흡기</td>
+                            <td>보통 이상</td>
+                            <td>약 850,000원</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>K9 2세대 3.3 T-GDI 마스터즈 II</td>
+                            <td>3,342cc V6 가솔린 터보</td>
+                            <td>보통 이상</td>
+                            <td>약 880,000원</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>K9 2세대 3.3 T-GDI 마스터즈 III</td>
+                            <td>3,342cc V6 가솔린 터보</td>
+                            <td>높음</td>
+                            <td>약 910,000원</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>K9 2세대 3.3 T-GDI 그랜드 마스터즈</td>
+                            <td>3,342cc V6 가솔린 터보</td>
+                            <td>높음</td>
+                            <td>약 960,000원</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>2024 K9 3.8 플래티넘</td>
+                            <td>3,778cc 가솔린 자연흡기</td>
+                            <td>높음</td>
+                            <td>약 1,020,000원</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>2024 K9 3.8 마스터즈</td>
+                            <td>3,778cc 가솔린 자연흡기</td>
+                            <td>높음</td>
+                            <td>약 1,070,000원</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>2024 K9 3.8 베스트셀렉션 I</td>
+                            <td>3,778cc 가솔린 자연흡기</td>
+                            <td>높음</td>
+                            <td>약 1,090,000원</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>2024 K9 3.3 T-GDI 마스터즈</td>
+                            <td>3,342cc 가솔린 터보</td>
+                            <td>매우 높음</td>
+                            <td>약 1,150,000원</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>2024 K9 3.3 T-GDI 베스트셀렉션 II</td>
+                            <td>3,342cc 가솔린 터보</td>
+                            <td>매우 높음</td>
+                            <td>약 1,210,000원</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>2025 K9 3.8 플래티넘</td>
+                            <td>3,778cc 가솔린 자연흡기</td>
+                            <td>높음</td>
+                            <td>약 1,120,000원</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>2025 K9 3.8 마스터즈</td>
+                            <td>3,778cc 가솔린 자연흡기</td>
+                            <td>매우 높음</td>
+                            <td>약 1,180,000원</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>2025 K9 3.8 베스트셀렉션 I</td>
+                            <td>3,778cc 가솔린 자연흡기</td>
+                            <td>매우 높음</td>
+                            <td>약 1,220,000원</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>2025 K9 3.3 T-GDI 마스터즈</td>
+                            <td>3,342cc 가솔린 터보</td>
+                            <td>매우 높음</td>
+                            <td>약 1,280,000원</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>2025 K9 3.3 T-GDI 베스트셀렉션 II</td>
+                            <td>3,342cc 가솔린 터보</td>
+                            <td>매우 높음</td>
+                            <td>약 1,320,000원</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>2026 K9 3.8 럭셔리 에디션</td>
+                            <td>3,778cc 가솔린 자연흡기</td>
+                            <td>매우 높음 (신차 반영)</td>
+                            <td>약 1,390,000원</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>2026 K9 3.8 프리미엄 팩</td>
+                            <td>3,778cc 가솔린 자연흡기</td>
+                            <td>최상위 등급</td>
+                            <td>약 1,430,000원</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>더 뉴 K9 3.8 AWD 노블레스</td>
+                            <td>3,778cc 가솔린 자연흡기</td>
+                            <td>높음</td>
+                            <td>약 1,110,000원</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>더 뉴 K9 3.3T AWD 마스터즈</td>
+                            <td>3,342cc 가솔린 터보</td>
+                            <td>높음</td>
+                            <td>약 1,190,000원</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>K9 리치 에디션</td>
+                            <td>3,778cc 가솔린 자연흡기</td>
+                            <td>보통</td>
+                            <td>약 840,000원</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>K9 그랜드 위드</td>
+                            <td>3,342cc 가솔린 자연흡기</td>
+                            <td>낮음</td>
+                            <td>약 660,000원</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>K9 스포티 컬렉션</td>
+                            <td>3,342cc 가솔린 터보</td>
+                            <td>보통 이상</td>
+                            <td>약 890,000원</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>K9 AWD 플래티넘</td>
+                            <td>3,778cc 가솔린 자연흡기</td>
+                            <td>보통 이상</td>
+                            <td>약 830,000원</td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>K9 2WD 플래티넘</td>
+                            <td>3,778cc 가솔린 자연흡기</td>
+                            <td>보통</td>
+                            <td>약 790,000원</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>위 데이터에서 나타나듯이 구형 세대 연식인 K9 1세대 모델들은 잔존하는 차량 가격이 안정적인 하향 국면에 도달하여 자차 가입 시에도 60만원 안팎의 합리적이고 싼곳을 찾기 쉬운 형태가 됩니다. 하지만 최신형 트림에 해당하거나 배기량이 거대한 K9 5.0 퀀텀, 그리고 강력한 출력의 과급 장치가 장착되어 고가로 분류되는 K9 3.3 T-GDI 계열은 수리 부속 단가가 비싸기 때문에 자연스럽게 책정 보험료 역시 비례하여 올라갑니다. 따라서 본인이 탑승 중인 차량 또는 구매를 예정하고 있는 모델이 어떠한 파워트레인을 구사하고 있는지 미리 숙지한 후 접근해야 금액적 차이점을 극복할 수 있습니다.</p>
+        </section>
+
+        <!-- 본문 3: 연령별 가격 편차 차트 및 설명 -->
+        <section class="content-section">
+            <h2>K9 주요 연령별 예상 요율 추이 분석</h2>
+            <p>자동차 가입 과정에서 가작 극적인 변동 폭을 발생시키는 요인은 다름 아닌 피보험자의 실제 주민등록상 연령층입니다. 대형 프리미엄 차종인 만큼 고령자나 무사고 유경력자들에겐 매우 완만하고 저렴한 기본 부담율이 승인되는 편이지만, 20대의 경우에는 대형 승용차 운행에 수반되는 사고 위험도가 높게 측정되어 가해 가중치가 부여되곤 합니다.</p>
+
+            <div class="chart-container">
+                <div class="chart-title">연령대별 K9 평균 연간 자동차 보험료 분석 시각 자료 (무사고 1인 기준)</div>
+                <div class="chart-bar-group">
+                    <div class="chart-bar-row">
+                        <div class="chart-label">만 21세 신규 가입</div>
+                        <div class="chart-track">
+                            <div class="chart-fill orange-bar" style="width: 100%;">2,400,000원</div>
+                        </div>
+                    </div>
+                    <div class="chart-bar-row">
+                        <div class="chart-label">만 26세 미만</div>
+                        <div class="chart-track">
+                            <div class="chart-fill orange-bar" style="width: 70.8%;">1,700,000원</div>
+                        </div>
+                    </div>
+                    <div class="chart-bar-row">
+                        <div class="chart-label">만 30세 이상</div>
+                        <div class="chart-track">
+                            <div class="chart-fill" style="width: 43.7%;">1,050,000원</div>
+                        </div>
+                    </div>
+                    <div class="chart-bar-row">
+                        <div class="chart-label">만 35세 이상</div>
+                        <div class="chart-track">
+                            <div class="chart-fill" style="width: 35.4%;">850,000원</div>
+                        </div>
+                    </div>
+                    <div class="chart-bar-row">
+                        <div class="chart-label">만 43세 무사고</div>
+                        <div class="chart-track">
+                            <div class="chart-fill" style="width: 29.1%;">700,000원</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>20대 대학생이나 사회 초년생들이 기아 K9을 패밀리카 또는 레저용으로 운용하려 계획할 때, 신규 가입 조건 하에서는 200만원을 상회하는 상당한 비용적 단점을 마주할 수밖에 없습니다. 이는 해당 차급에 누적되는 손해율 분석 자료에서 20대의 접촉 사고 빈도가 비교적 빈번하고 고급 국산 세단의 정비단가가 매우 높기 때문에 발생합니다. 그러나 점차 연령이 늘어나 만 30세를 초과하는 시점부터는 패밀리카 세단 고유의 조심스러운 주행 습관과 무사고 연차 할인이 연동되어 약 80만원대에서 100만원 선까지 극적으로 평균 비용이 감소함을 볼 수 있습니다.</p>
+        </section>
+
+        <!-- 본문 4: 커뮤니티 후기 분석 및 장단점 분석 -->
+        <section class="content-section">
+            <h2>보배드림, 디시, 펨코 등 커뮤니티 내돈내산 가입 후기 및 실태 분석</h2>
+            <p>차량 마니아 및 실구매 오너들의 생생한 의견이 상존하는 보배드림, 디시인사이드 자동차 갤러리, 에펨코리아(펨코) 게시판 등의 내돈내산 사용담들을 취합하면 이 가입 분야에서의 꼼꼼한 비교가 왜 필요한지 더 명확하게 알 수 있습니다. 많은 차주들이 'K9의 풍부한 반자율 주행 사양 덕분에 다이렉트 가입 단계에서 첨단 안전 장비 추가 감면을 손쉽게 세팅할 수 있었다'고 실사용 후기에서 지적하고 있습니다.</p>
+            <p>이 대형 차량 군의 고유 장단점을 분리해서 살펴보면 다음과 같습니다.</p>
+            
+            <h3>K9 보험 관련 장점</h3>
+            <ul class="styled-list">
+                <li>첨단 운전자 주행 보조 장치인 차로 이탈 경고 장치, 전방 충돌 방지 장치 등이 기본 사양화되어 있어 보험사 연동 적용률이 훌륭하여 추가적 감면이 수월합니다.</li>
+                <li>오너들의 주 평균 주행 속도와 거리가 안전 위주로 세팅되는 대형 고급 세단 차종이므로 연말 손해율 인하 반영에서 상당히 이득을 얻기 용이합니다.</li>
+                <li>티맵(T-map) 모바일 내비게이션 점수가 높은 수준으로 도출되기 쉬운 정속 주행 오너의 비중이 타 패스트백 세단 대비 훨씬 커 추가 할인이 유리합니다.</li>
+            </ul>
+
+            <h3>K9 보험 관련 단점</h3>
+            <ul class="styled-list">
+                <li>에어 서스펜션과 고해상도 매트릭스 LED 헤드라이트 등 하이테크 하드웨어가 즐비하여 가벼운 범퍼 추돌 사고 시에도 자기차량손해(자차) 항목에서의 부품비 청구 가액이 비쌉니다.</li>
+                <li>V6 및 V8 등 초대형 다기통 천연 엔진들의 경우, 세부 손해 배상 한도를 높게 구성해야 하므로 대물 한도 10억원 이상 설정을 추천하여 요율 지불금이 증액됩니다.</li>
+                <li>신차 가액이 여타 세단들보다 확연히 비싸서 가입 초기 1~3년 차에는 차량 감가율 대비 책정 기준 가격이 부담스럽게 산출됩니다.</li>
+            </ul>
+        </section>
+
+        <!-- 본문 5: 스마트 가이드 및 할인 혜택, AI 분석 연계 -->
+        <section class="content-section">
+            <h2>2026년 다이렉트 신규 가입 혜택과 인공지능 분석 활용안</h2>
+            <p>과거에는 오직 가입 설계사들이 수동으로 발급하는 가이드에 기반하여 계약을 이행했다면, 2026년 오늘날에는 똑똑하게 자동차를 소유하려는 운전자들의 트렌드가 주류를 점하고 있습니다. 네이버 블로그와 구글 검색 데이터는 물론이고 유튜브, 트위터, 인스타그램, 페이스북 같은 가변형 미디어 채널 상에서도 다이렉트 비교 사이트 이용 권장 팁이 쉴 새 없이 업로드되고 있습니다.</p>
+            <p>동시에 테크니컬 얼리어답터들은 제미나이(Gemini)나 챗지피티(ChatGPT)를 필두로 한 스마트 AI 에이전트에 자기가 가입하려는 세부 정보 리스트와 주행 데이터를 프롬프트로 집어넣어, 가장 할인율이 높은 담보 결합 방식을 시뮬레이션하기도 합니다. 예를 들어 '연간 5천 킬로미터 미만을 탑승하고, 안전운전 점수가 95점인 만 45세 K9 3.8 AWD 마스터즈 차주의 종합 혜택 순위는?' 과 같은 연산 구조를 지피티나 제미나이를 통해서 단시간에 확인하고 가장 가성비 싼곳을 점찍어내는 패턴입니다.</p>
+            <p>다이렉트 신규 가입의 경우, 각 손해보험사들은 자사 고객 유치를 목적으로 엄청난 사은품과 상품권 이벤트를 진행합니다. 신세계 상품권이나 주요 주유소 모바일 교환권을 3만원에서 최대 5만원권까지 전달하거나 제휴 신용카드 연계를 통한 청구 할인 및 일시적 주유 캐시백 캐시백 지원금 지급 등 다양하게 포진해 있으니, 어떤 업체의 특약 조건이 가장 어울리는지 단독으로 결정하지 말고 꼼꼼히 비교하는 지혜가 필히 요구됩니다.</p>
+        </section>
+
+        <!-- FAQ 아코디언 섹션 -->
+        <section class="content-section">
+            <h2>K9 자동차 보험료 자주 묻는 질문 (FAQ)</h2>
+            <div class="faq-wrapper">
+                <div class="faq-block">
+                    <div class="faq-trigger">Q1. 기아 K9의 연간 평균 종합 보험료는 실질적으로 얼마 수준인가요?</div>
+                    <div class="faq-content">
+                        기본적인 30대 후반~40대 이상 무사고 가입자 기준으로 종합 평균 비용은 70만원에서 110만원 가량이 대표적인 범주입니다. 다만 신호 위반 딱지 수령 등으로 인한 이력이 축적되어 있거나, 사고 이력에 기인한 할증 점수 변동에 의해서 본인의 예상 가격 대비 20~30% 할증될 우려가 상존합니다.
+                    </div>
+                </div>
+                <div class="faq-block">
+                    <div class="faq-trigger">Q2. K9 2세대 모델과 더 뉴 K9 간에 보험 비용 차이가 뚜렷한가요?</div>
+                    <div class="faq-content">
+                        네, 기본적으로 차량 가액 산출 시 더 뉴 K9 모델군이 2세대 초기 모델군보다 잔존 보장 한도 가격이 현 시점에서 더 비싸게 규정되므로 자차 청구 항목 단가에서 격차가 발생합니다. 대략 10만원에서 많게는 25만원 정도 연식 등급 차이에 기반해 금액 차이점이 형성됩니다.
+                    </div>
+                </div>
+                <div class="faq-block">
+                    <div class="faq-trigger">Q3. 에펨코리아(펨코)나 보배드림에서 K9 다이렉트 견적 할인 추천 순위는 어떻게 설명하나요?</div>
+                    <div class="faq-content">
+                        차주 커뮤니티 등지에서 언급하는 절대적인 비법은 바로 '모바일 다이렉트 원터치 가입'과 '티맵 점수 특약 할인'의 연합 구성입니다. 본인이 직접 진행하는 셀프 가입 시에 오프라인 지점 영업 대비 대략 15% 가량의 절약 혜택이 성사되며, 여기에 마일리지 연도별 실시간 정산 환불까지 받으면 누적 수수료는 대폭 삭감됩니다.
+                    </div>
+                </div>
+                <div class="faq-block">
+                    <div class="faq-trigger">Q4. K9을 신규로 양도받아 가입 시 무사고 혜택 계계 승계가 가능한가요?</div>
+                    <div class="faq-content">
+                        네, 이전 타던 차종에서 기아 K9으로 차량 대체 이전을 집행하시는 경로라면, 기존 가입 이력과 누적된 연도별 무사고 등급 요율은 동일하게 승용차 등급에 맞춰 연동되어 이어지기 때문에 신규 부담이 비교적 줄어듭니다.
+                    </div>
+                </div>
+                <div class="faq-block">
+                    <div class="faq-trigger">Q5. 대물 보장 한도를 기본 2억 원에서 10억 원 이상으로 인상하면 가입비 인상이 매우 심한가요?</div>
+                    <div class="faq-content">
+                        대형 플래그십 차량 세그먼트의 경우 대물 배상 요율 구간을 2억 원에서 10억 원 수준으로 무려 5배 상승시키더라도 연간 종합 가입 요금에서 발생하는 가중치는 약 2만원에서 3만원 가량에 그칩니다. 슈퍼카나 고가 외제 수입차 유입도가 비약적으로 확대된 2026년 기준 공도 안전성 확보를 위해 필히 한도를 10억원 이상 최대화하여 저렴한곳에 대비책을 두시는 것이 극도의 권고사항입니다.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 외부 공인 신뢰성 사이트 연계 섹션 -->
+        <section class="content-section">
+            <h2>공인된 신뢰성 높은 외부 정보 및 유용 서비스 리포트</h2>
+            <p>더 깊고 법률적이며 공적 검증을 통과한 전문 자료가 궁금하시다면 이하의 권위 있는 기관에서 제공되는 포털 서비스를 참고해 주십시오.</p>
+            
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <a href="https://namu.wiki/w/%EA%B8%B0%EC%95%84%20K9" target="_blank" rel="noopener">나무위키: 기아 K9</a>
+                    <p>기아의 대표적인 하이클래스 대형 세단인 K9 시리즈 전체 라인업 변천사 및 자세한 트림 역사 분석 정보를 볼 수 있습니다.</p>
+                </div>
+                <div class="resource-card">
+                    <a href="https://www.e-insmarket.or.kr" target="_blank" rel="noopener">보험다모아 포털</a>
+                    <p>생명보험협회 및 손해보험협회에서 주관하는 다이렉트 차량 가입 통합 견적 일괄 비교 공용 시스템입니다.</p>
+                </div>
+                <div class="resource-card">
+                    <a href="https://fine.fss.or.kr" target="_blank" rel="noopener">금융감독원 금융소비자포털 파인</a>
+                    <p>금융 제반 법규 및 보험료 요율 적용, 분쟁 사안 대처 등 금융 지식 전반에 걸친 공인 가이드 가이드를 검색해 보실 수 있습니다.</p>
+                </div>
+                <div class="resource-card">
+                    <a href="https://www.koroad.or.kr" target="_blank" rel="noopener">도로교통공단 공식 웹사이트</a>
+                    <p>안전 주행 등급 강화에 필수적인 도로 안전 관련 법령 개정안 정보 및 의무 교육 등에 관해 명시하는 정보처입니다.</p>
+                </div>
+                <div class="resource-card">
+                    <a href="https://www.ecar.go.kr" target="_blank" rel="noopener">국토교통부 자동차민원 대국민포털</a>
+                    <p>보유 중인 기아 K9의 등록 주행 이력 상세 원부 및 자동차세 납부 현황, 자동차 검사 만료 대상 확인 등 전방위 민원 조회 서비스를 누릴 수 있습니다.</p>
+                </div>
+            </div>
+        </section>
     </main>
-  </body>
-</html>
+
+    <!-- 자바스크립트 소스: 대화형 기능 및 FAQ 토글 구현 -->
+    <script>
+        // FAQ 아코디언 핸들러
+        document.querySelectorAll('.faq-trigger').forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const block = trigger.parentElement;
+                const isOpen = block.classList.contains('open');
+                
+                // 타겟 제외한 타 블록 닫기
+                document.querySelectorAll('.faq-block').forEach(b => b.classList.remove('open'));
+                
+                if (!isOpen) {
+                    block.classList.add('open');
+                }
+            });
+        });
+
+        // K9 맞춤 가입 견적 계산 시뮬레이션 코드
+        function calculatePremium(event) {
+            event.preventDefault();
+
+            const ageValue = parseInt(document.getElementById('driver-age').value);
+            const careerValue = parseInt(document.getElementById('driving-career').value);
+            const accidentValue = document.getElementById('accident-history').value;
+            const modelSelect = document.getElementById('car-model');
+            const modelName = modelSelect.options[modelSelect.selectedIndex].text;
+
+            if (!ageValue || !modelSelect.value) {
+                alert("연령과 등급 모델 구분을 온전하게 고르셨는지 다시 판단해 주세요.");
+                return;
+            }
+
+            // 기본 가상 가액 설정
+            let basePremium = 1200000;
+
+            // 1. 연령 변수 적용
+            if (ageValue === 21) basePremium *= 2.0;
+            else if (ageValue === 24) basePremium *= 1.5;
+            else if (ageValue === 26) basePremium *= 1.25;
+            else if (ageValue === 30) basePremium *= 0.95;
+            else if (ageValue === 35) basePremium *= 0.85;
+            else if (ageValue === 43) basePremium *= 0.72;
+            else if (ageValue === 50) basePremium *= 0.68;
+
+            // 2. 등급형 변수 적용 (터보 및 연식 가액)
+            if (modelSelect.value.includes('5.0') || modelSelect.value.includes('2026') || modelSelect.value.includes('2025-3.3t')) {
+                basePremium *= 1.35;
+            } else if (modelSelect.value.includes('2025') || modelSelect.value.includes('2024-3.3t') || modelSelect.value.includes('thenew-3.3t')) {
+                basePremium *= 1.18;
+            } else if (modelSelect.value.includes('1st')) {
+                basePremium *= 0.70; // 구형 감가 적용
+            } else {
+                basePremium *= 1.0;
+            }
+
+            // 3. 운전 경력 반영
+            if (careerValue === 0) basePremium *= 1.3;
+            else if (careerValue === 1) basePremium *= 1.1;
+            else if (careerValue === 3) basePremium *= 0.92;
+            else if (careerValue === 5) basePremium *= 0.85;
+            else if (careerValue === 10) basePremium *= 0.80;
+
+            // 4. 사고 지표 반영
+            if (accidentValue === 'yes-small') basePremium *= 1.15;
+            else if (accidentValue === 'yes-big') basePremium *= 1.45;
+            else if (accidentValue === 'yes-multi') basePremium *= 1.85;
+            else basePremium *= 0.9;
+
+            // 5. 체크박스 감면률 연동 계산
+            let discountRate = 0;
+            if (document.getElementById('tmap').checked) discountRate += 12;
+            if (document.getElementById('mileage').checked) discountRate += 15;
+            if (document.getElementById('blackbox').checked) discountRate += 4;
+            if (document.getElementById('child').checked) discountRate += 6;
+            if (document.getElementById('card').checked) discountRate += 5;
+            if (document.getElementById('e-contract').checked) discountRate += 3;
+
+            const originalPremium = Math.round(basePremium);
+            const finalPremium = Math.round(basePremium * (1 - discountRate / 100));
+
+            // 결과 표출 작업
+            const resultBox = document.getElementById('result-box');
+            const summary = document.getElementById('calc-summary');
+            const discountInfo = document.getElementById('calc-discount');
+
+            summary.textContent = `선택하신 [${modelName}] 모델 기준 연간 예상 표준 가액은 약 ${originalPremium.toLocaleString()}원 입니다.`;
+            discountInfo.textContent = `다이렉트 맞춤 할인율 ${discountRate}%를 최종 통합 적용하여 연간 ${finalPremium.toLocaleString()}원까지 절약 가입할 수 있습니다.`;
+            
+            resultBox.style.display = 'block';
+            resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    </script>
+  
